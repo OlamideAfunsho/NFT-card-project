@@ -1,0 +1,135 @@
+*{
+     
+     margin:0;
+     padding:0;
+}
+body{
+     background-color: hsl(217, 54%, 11%);
+     color:hsl(0, 0%, 100%);
+     font-size: 15px;
+     font-family: 'Outfit' , sans-serif;
+     font-weight: 300;
+     
+     
+}
+
+
+
+
+.container{
+     display: inline-block;
+     background-color: hsl(216, 50%, 16%);
+     width:230px;
+     border-radius: 10px;
+     padding: 15px;
+     position:absolute;
+     top:50%;
+     left:50%;
+     transform: translate(-50%,-50%);
+     
+}
+
+/* -----------MAIN IMAGE--------- */
+.figure{
+     width:230px;
+     height:230px;
+     position:relative;
+}
+
+.equilibrium{
+     width:230px;
+     height:230px;
+     border-radius: 5px;
+}
+.img-hover{
+     position:absolute;
+     top:50%;
+     left:50%;
+     transform: translate(-50%,-50%);
+     display:none;
+     
+     
+     
+}
+
+.overlay {
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     height: 100%;
+     width: 100%;
+     opacity: 0;
+     transition: .5s ease;
+     background-color:hsl(178, 100%, 50%) ;
+     border-radius:5px ;
+   }
+   
+
+
+h3{
+     margin:15px 0;
+     font-weight:600;
+}
+
+.text{
+     margin:15px 0;
+     color:hsl(215, 51%, 70%);
+     word-spacing: -1px;
+     
+}
+
+/* --------ICONS-------- */
+.icons{
+     margin:20px 0;
+     border-bottom:1px solid hsl(215, 32%, 27%);
+     padding-bottom: 15px;
+     
+}
+
+img{
+     margin-right: 5px;
+     
+}
+
+.eth{
+     color:hsl(178, 100%, 50%);
+     font-weight: 500;
+
+}
+.clock{
+     margin-left:50px;
+     color:hsl(215, 51%, 70%);
+}
+.icon-text{
+     vertical-align:25%;
+}
+
+.avatar{
+     width:30px;
+     height: 30px;
+     border:1px solid hsl(0, 0%, 100%);
+     border-radius: 50%;
+}
+
+
+
+.author-text{
+   vertical-align:70%;
+}
+
+/* ------------STATES------------- */
+.hover:hover{
+     color:hsl(178, 100%, 50%);
+     cursor:pointer;
+}
+
+.figure:hover .img-hover{
+     display:block;
+     
+}
+.figure:hover .overlay {
+     opacity: 0.6;
+     cursor: pointer;
+   }
